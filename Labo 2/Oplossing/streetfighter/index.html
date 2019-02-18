@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game</title>
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+		<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+	</head>
+	<body>
+		<section id="fighter" class="container">
+			<section id="game" v-bind:class="{hidden: gameClass}">
+				<section v-bind:style="ken.style.health" id="kenHp">
+				</section>
+				<section v-bind:style="deejay.style.health" id="deejayHp">
+				</section>
+				<section v-bind:style="ken.style.char" id="ken">
+				</section>
+				<section v-bind:style="deejay.style.char" id="deejay">
+				</section>
+			</section>
+			<section v-bind:class="{hidden: gameOverClass}" id="gameover">
+				<p>The winner is:</p>
+				<p v-bind:style="winner.style" id="winner">{{winner.name}}</p>
+			</section>
+			<section id="buttonsKen">
+				<button v-on:click="kenAttack" id="kenAttack">Ken Attack</button>
+			</section>
+			<section id="buttonsDeejay">
+				<button v-on:click="deejayAttack" id="deejayAttack">Deejay Attack</button>
+			</section>
+		</section>
+		
+		<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>

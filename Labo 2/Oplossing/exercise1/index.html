@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1</title>
+    </head>
+    <body>
+        <div id="exercise">
+            <!-- 1) Vul de <p> hieronder in met jouw naam en leeftijd - gebruik Interpolation -->
+            <p>VueJS is pretty cool - {{Name}} ({{Age}})</p>
+            <!-- 2) Toon jouw leeftijd, vermenigvuldigd met 3 -->
+            <p>{{Age * 3}}</p>
+            <!-- 3) Roep een functie aan met als output een random float tussen 0 en 1 (Math.random()) -->
+            <p>{{Math.random()}}</p>
+            <!-- 4) Zoek een afbeelding op Google en toon deze hier door deze te binden aan de "src" attribute -->
+            <div>
+                <img v-bind:src="Url" style="width:100px;height:100px">
+            </div>
+            <!-- 5) Toon jouw naam in het input veld (gebruik de "value" attribute) -->
+            <div>
+                <input v-bind:value="Name" type="text">
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

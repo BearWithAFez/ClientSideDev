@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4</title>
+</head>
+<body>
+  <div id="exercise">
+    <!-- 1) Start een Effect met de Button. Het Effect moet afwisselend de class "highlight" of "shrink" toevoegen aan de div met id "effect". Gebruik setInterval om het Effect te laten lopen -->
+    <div>
+      <button @click="startEffect">Start Effect</button>
+      <div id="effect"></div>
+    </div>
+    <!-- 2) Maak een paar CSS classes en voeg deze toe met de array syntax -->
+    <div>I got no class :(</div>
+    <!-- 3) Laat de gebruiker een class ingeven en koppel deze dynamisch aan de div -->
+    <div>
+      <input type="text">
+      <div></div>
+    </div>
+    <!-- 4) Herhaal 3) maar nu met waarden voor styles ipv class namen. Koppel de styles dynamisch aan de div.  -->
+    <div>
+      <input type="text">
+      <div></div>
+    </div>
+    <!-- 5) Maak een progress bar met setInterval en style bindings. Start de progress bar door op de knop te klikken. -->
+    <div>
+      <button v-on:click="startProgress">Start Progress</button>
+      <div></div>
+    </div>
+  </div>
+
+  <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

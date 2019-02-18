@@ -1,0 +1,97 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face {
+  font-family: Arcade;
+  src: url(../fonts/arcadeclassic.TTF);
+}
+
+section.container {
+	height: 310px;
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+section#game {
+	height: 280px;
+	width: 100%;
+	background-image: url(../images/arena.gif);
+	background-size: 100% 100%;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	position: relative;
+}
+
+section#ken{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+
+section#deejay{
+	position: absolute;
+	top: 80px;
+	right: 100px;
+	transform: scaleX(-1);
+}
+
+section#buttonsKen {
+	height: 30px;
+	float: left;
+}
+
+section#buttonsDeejay {
+	height: 30px;
+	float: right;
+}
+
+#kenHp{
+	position: absolute;
+	width: 350px;
+	height: 30px;
+	background-color: yellow;
+	top: 20px;
+	background-repeat: no-repeat;
+	background-image: url(../images/red.jpg);
+	background-size: 0% 100%;
+
+	left: 20px;
+}
+
+#deejayHp{
+	position: absolute;
+	width: 350px;
+	height: 30px;
+	background-color: yellow;
+	top: 20px;
+	background-repeat: no-repeat;
+	background-image: url(../images/red.jpg);
+	background-size: 0% 100%;
+
+	right: 20px;
+	transform: scaleX(-1);
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+#gameover {
+	width: 100%;
+	background-color: black;
+	position: relative;
+	text-align: center;
+	padding: 14% 0;
+}
+#gameover p {
+	font-size: 50px;
+	color: white;
+	font-family: arcade;
+}

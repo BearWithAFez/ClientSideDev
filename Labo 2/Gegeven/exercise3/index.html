@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3</title>
+</head>
+<body>
+    <div id="exercise">
+        <!-- 1) Toon een "result" namelijk 'not there yet' voor zolang "value" niet gelijk is aan 37 - "value" kan je aanpassen met de buttons. Print 'done' wanneer value gelijk is aan 37 -->
+        <div>
+            <p>Current Value: {{ value }}</p>
+            <button @click="value += 5">Add 5</button>
+            <button @click="value += 1">Add 1</button>
+            <p>{{ result }}</p>
+        </div>
+        <!-- 2) Kijk naar aanpassingen voor "result" en reset "value" na 5 seconden (hint: setTimeout(..., 5000) -->
+        <div>
+            <input type="text">
+            <p>{{ value }}</p>
+        </div>
+    </div>
+
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
