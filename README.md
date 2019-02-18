@@ -8,6 +8,11 @@ In this repo I'm just gonna post like my solutions to Clientside. Yeh. :fire:
 
 In dit labo werd verwacht om Compass te instaleren en een simpele animatie te maken in JS.
 
+
+## Labo 2: Vue
+
+In dit labo worden er 4 oefening paginas gegeven en een uitbreiding aan Streetfighter gevraagd.
+
 # Contact
 
 Feel free to contact me if anything comes up.

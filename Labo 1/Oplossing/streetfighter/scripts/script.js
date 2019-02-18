@@ -48,7 +48,7 @@
 
         // declare current timestep
         var kenTimestep = 1000/ken.steps.length
-        var deejayTimestep = 1000/ken.steps.length
+        var deejayTimestep = 1000/deejay.steps.length
         ken.currentIteration = Math.floor(lastRender / kenTimestep)        
         deejay.currentIteration = Math.floor(lastRender / deejayTimestep)
 
