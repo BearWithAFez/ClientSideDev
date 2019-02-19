@@ -19,7 +19,7 @@
 }
 
 .whack{
-	transform: skewY(5deg);
+  transform: scaleY(-1);
 }
 
 .example{
